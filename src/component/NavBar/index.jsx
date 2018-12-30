@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
+import { Layout } from 'antd';
 import './NavBar.scss';
+
+const { Header } = Layout;
 
 class NavBar extends Component {
 	render() {
 		return (
-			<nav>
-				<ul>
-					<li>Atrás</li>
-					<li>HorarioJS</li>
-					<li>Configuración</li>
-				</ul>
-			</nav>
+			<Header style={{ position: 'fixed', zIndex: 1, width: '100%', backgroundColor: '#711610' }}>
+				<h1 style={{ textAlign: 'center', color: 'white', fontWeight: '900' }}>Generador de horarios</h1>
+			</Header>
 		)
 	}
 }
