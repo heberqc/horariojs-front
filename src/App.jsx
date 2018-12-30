@@ -1,27 +1,30 @@
 import React, { Component } from 'react';
-import './App.scss';
-import NavBar from "./component/NavBar";
-import CurrentStep from "./component/CurrentStep";
+import NavBar from './component/NavBar';
+import CurrentStep from './component/CurrentStep';
+import AppFooter from './component/AppFooter';
+import Steps from './component/Steps';
 import { Layout } from 'antd';
 
-const { Content, Footer } = Layout;
+import './App.scss';
+const { Content } = Layout;
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      step: 0,
+    }
+  }
+  
   render() {
     return (
       <Layout>
         <NavBar />
         <Content style={{ padding: '0 50px', marginTop: 64 , marginBottom: 'auto' }}>
-          <CurrentStep />
-          <div style={{ background: '#fff', padding: 24, minHeight: 380 }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi saepe necessitatibus, atque alias
-            laudantium nostrum, veritatis dignissimos quae perferendis debitis quod voluptate in nulla numquam
-            ratione, soluta officiis illo nihil!
-          </div>
+          <CurrentStep step={this.state.step}/>
+          <Steps step={this.state.step}/>
         </Content>
-        <Footer style={{ position: 'absolute', bottom: 0, width: '100%', textAlign: 'center' }}>
-          Ant Design ©2018 Created by Ant UED
-        </Footer>
+        <AppFooter />
       </Layout>
     );
   }
