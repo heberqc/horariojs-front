@@ -11,7 +11,7 @@ class AppFooter extends Component {
 
 	render() {
 		return (
-			<Footer style={{ position: 'fixed', bottom: 0, width: '100%', textAlign: 'center' }}>
+			<Footer style={{ width: '100%', textAlign: 'center' }}>
 				Heber Quequejana ({this.openLink('@heberqc','https://github.com/heberqc')}) - 2019
 			</Footer>
 		)

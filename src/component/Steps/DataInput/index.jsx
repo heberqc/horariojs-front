@@ -166,7 +166,7 @@ class DataInput extends Component {
 						label={(
 							<span>
 								Nickname&nbsp;
-              <Tooltip title="What do you want others to call you?">
+								<Tooltip title="What do you want others to call you?">
 									<Icon type="question-circle-o" />
 								</Tooltip>
 							</span>

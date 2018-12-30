@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import DataInput from './DataInput';
 import CoursesSelect from './CoursesSelect';
+import ScheduleGenerate from './ScheduleGenerate';
+import ScheduleFilter from './ScheduleFilter';
 
 class Steps extends Component {
-	constructor(props) {
-		super(props);
+	constructor(props, context) {
+		super(props, context);
+		
 	}
-
+	
 	showStep(index) {
 		switch (index) {
 			case 0:
@@ -14,9 +17,9 @@ class Steps extends Component {
 			case 1:
 				return <CoursesSelect />
 			case 2:
-				return <DataInput />
+				return <ScheduleGenerate />
 			case 3:
-				return <DataInput />
+				return <ScheduleFilter />
 			default:
 				return <div>Error</div>
 		}

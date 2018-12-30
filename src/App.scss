@@ -5,3 +5,16 @@
   margin: 16px 24px 16px 0;
   float: left;
 }
+
+Layout {
+  display: flex;
+  flex-direction: column;
+
+  Content {
+    flex: 1 0 auto;
+  }
+
+  AppFooter {
+    flex-shrink: 0;
+  }
+}
