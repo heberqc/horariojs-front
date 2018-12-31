@@ -5,11 +5,6 @@ import ScheduleGenerate from './ScheduleGenerate';
 import ScheduleFilter from './ScheduleFilter';
 
 class Steps extends Component {
-	constructor(props, context) {
-		super(props, context);
-		
-	}
-	
 	showStep(index) {
 		switch (index) {
 			case 0:
@@ -26,7 +21,11 @@ class Steps extends Component {
 	}
 
 	render() {
-		return this.showStep(this.props.step || 0);
+		return (
+			<div style={{ borderRadius: 2, border: '1px solid #ebedf0', backgroundColor: '#fff' }}>
+				{this.showStep(this.props.step || 0)}
+			</div>
+		)
 	}
 }
 

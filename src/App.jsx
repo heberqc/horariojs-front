@@ -18,9 +18,9 @@ class App extends Component {
   
   render() {
     return (
-      <Layout>
+      <Layout style={{ position: 'relative', minHeight: '100vh' }}>
         <NavBar />
-        <Content style={{ padding: '0 50px', marginTop: 64 , marginBottom: 'auto' }}>
+        <Content style={{ padding: '0 50px 2.5rem 50px', marginTop: 64 }}>
           <CurrentStep step={this.state.step}/>
           <Steps step={this.state.step}/>
         </Content>
