@@ -15,14 +15,14 @@ class App extends Component {
       step: 0,
     }
   }
-  
+
   render() {
     return (
       <Layout style={{ position: 'relative', minHeight: '100vh' }}>
         <NavBar />
         <Content style={{ padding: '0 50px 2.5rem 50px', marginTop: 64 }}>
-          <CurrentStep step={this.state.step}/>
-          <Steps step={this.state.step}/>
+          <CurrentStep step={this.state.step} />
+          <Steps step={this.state.step} />
         </Content>
         <AppFooter />
       </Layout>

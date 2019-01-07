@@ -22,8 +22,8 @@ class Steps extends Component {
 
 	render() {
 		return (
-			<div style={{ borderRadius: 2, border: '1px solid #ebedf0', backgroundColor: '#fff' }}>
-				{this.showStep(this.props.step || 0)}
+			<div style={{ borderRadius: 2, border: '1px solid #ebedf0', backgroundColor: '#fff', padding: 8 }}>
+				{this.showStep(this.props.step || 2)}
 			</div>
 		)
 	}

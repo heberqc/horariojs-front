@@ -34,16 +34,21 @@ class DataInput extends Component {
 	render() {
 		const { getFieldDecorator } = this.props.form;
 
+		// inputs y labels
 		const formItemLayout = {
 			labelCol: {
 				xs: { span: 24 },
-				sm: { span: 8 },
+				sm: { span: 6 },
+				md: { span: 8 },
 			},
 			wrapperCol: {
 				xs: { span: 24 },
-				sm: { span: 16 },
+				sm: { span: 14 },
+				md: { span: 12 },
 			},
 		};
+
+		// para el botón
 		const tailFormItemLayout = {
 			wrapperCol: {
 				xs: {
@@ -70,7 +75,6 @@ class DataInput extends Component {
 					})(
 						<Select
 							showSearch
-							style={{ width: 200 }}
 							placeholder="Select a person"
 							optionFilterProp="children"
 							onChange={this.handleChange}
